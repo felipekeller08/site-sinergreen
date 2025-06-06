@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinergreen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+<div class="logo">
+<img src="/imagem/logo.png" alt="logo">
+</div>
+<nav>
+    <ul>
+        <a href="#sobre"><li>sobre</li></a>
+        <a href="#equipamentos"><li>equipamentos</li></a>
+        <a href="#calculadora"><li>calculadora</li></a>
+        <a href="#graficos"><li>gráficos</li></a>
+    </ul>
+</nav>
+
+    </header>
+    <hr>
+    <div class="grid">
+        
+        <div class="titulo">
+            <h1 id="sobre">Conheça nosso<br>projeto!</h1>
+            <p>O projeto teve início com um trabalho realizado <br>
+                por alunos do senai. O trabalho tinha como objetivo, <br>
+                criar um sistema que calculasse o consumo de energia <br>
+                de determinado local.
+                </p>
+        </div>
+        <div class="gridimg">
+            <img src="/imagem/equipe.jpg" alt="Imagem do Projeto" class="img-projeto">
+        </div>
+    </div>
+
+    <h1 class="titulo-2">O que fazemos?</h1>
+  <div class="grid">
+        
+    <div class="fazemos">
+        <img src="imagem/fazemos.webp" alt="">
+    </div>
+    <div class="texto-2">
+        <p>Somos uma empresa focada em sustentabilidade e fazemos projetos para o seu negócio poupar energia, tempo, e dinheiro. 
+         Cuidamos da sua economia com dados, números e muita tecnologia. Fazemos o melhor para o planeta! Nós analisamos o seu consumo,
+         fazemos uma análise minuciosa de quais equipamentos seu estabelecimento possui, e com isso, conseguimos
+        implantar o melhor hardware e melhor sistema para o seu negócio!</p>
+    </div>
+</div>
+<div class="calculo">
+<div class="calcule">
+<h1 id="equipamentos">Equipamentos:</h1>
+</div>
+</div>
+<div class="calculo">
+<p>Estes são os equipamentos usados na sala da biblioteca do SENAI - Mecatrônica,<br>
+onde nosso projeto foi aplicado.</p>
+ </div>
+<div class="blocos-container">
+  <div class="bloco">
+    <img src="imagem/computador.webp" alt="Imagem 1">
+    <p>Média de consumo:<br>65 Watts</p>
+  </div>
+  <div class="bloco">
+    <img src="imagem/impressora.png" alt="Imagem 2">
+    <p>Média de consumo:<br>360 Watts</p>
+  </div>
+  <div class="bloco">
+    <img src="imagem/lampada.png" alt="Imagem 3">
+    <p>Média de consumo:<br>16 Watts</p>
+  </div>
+</div>
+<div class="calculo">
+<div class="calcule">
+<h1 id="calculadora">Calcule seu consumo de <br>energia:</h1>
+</div>
+</div>
+<div class="calculo">
+<p>Insira os dados solicitados de acordo com o que você sabe sobre os<br>
+ equipamentos. Caso não souber, consulte a aba de equipamentos.</p>
+ </div>
+<div class="calculadoras">
+  <div class="container">
+    <img src="/imagem/comput.png" alt="">
+    <h1>Computador</h1>
+    <label for="computador">Watts:</label>
+    <input type="number" id="computador"><br>
+    <label for="quantidade1">Quantidade:</label>
+    <input type="number" id="quantidade1"><br>
+    <label for="tempo1">Tempo ligado (horas por dia):</label>
+    <input type="number" id="tempo1"> 
+    <div class="result">
+    <p id="result1"></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="/imagem/impre.png" alt="">
+    <h1>Impressora</h1> 
+    <label for="impressora">Watts:</label>
+    <input type="number" id="impressora"><br>
+    <label for="quantidade2">Quantidade:</label>
+    <input type="number" id="quantidade2"><br>
+    <label for="tempo2">Tempo ligado (horas por dia):</label>
+    <input type="number" id="tempo2">
+    <div class="result">
+    <p id="result2"></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="/imagem/lamp.png" alt="">
+    <h1>Lâmpadas</h1>
+    <label for="lampadas">Watts:</label>
+    <input type="number" id="lampadas"><br>
+    <label for="quantidade3">Quantidade:</label>
+    <input type="number" id="quantidade3"><br>
+    <label for="tempo3">Tempo ligado (horas por dia):</label>
+    <input type="number" id="tempo3">
+    <div class="result">
+    <p id="result3"></p>
+    </div>
+  </div>
+</div>
+<div class="total">
+<h2 id="total"></h2>
+</div>
+<div class="botao">
+<button onclick="calcular()"><p>Calcular consumo</p></button>
+   </div>
+<h2 id="total"></h2>
+
+<div class="calculo">
+<div class="calcule">
+<h1 id="graficos">Gráfico do consumo<br> de energia:</h1>
+</div>
+</div>
+<div class="grafico-container">
+ <canvas id="graficoConsumo" width="400" height="200"></canvas>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>

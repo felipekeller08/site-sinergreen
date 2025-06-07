@@ -22,7 +22,7 @@ function calcular(){
 
     let total = resultado1 + resultado2 + resultado3
      let valortotal = valor1 + valor2 + valor3
-    document.getElementById("total").textContent = "O total de energia gasto foi de: " + total.toFixed(2) + " kWh = R$ " + valortotal.toFixed(2) 
+    document.getElementById("total").textContent = "O total de energia gasto em kWh foi de: " + total.toFixed(2) + " e o total em dinheiro foi de: R$ " + valortotal.toFixed(2) 
 
      gerarGrafico();
 }

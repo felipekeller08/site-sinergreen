@@ -12,14 +12,14 @@
 <img src="/imagem/logo.png" alt="logo">
 </div>
 <nav>
-    <ul>
+    <ul id="lista1">
         <a href="#sobre"><li>sobre</li></a>
         <a href="#equipamentos"><li>equipamentos</li></a>
         <a href="#calculadora"><li>calculadora</li></a>
         <a href="#graficos"><li>gráficos</li></a>
+        <a href="#sugestoes"><li>sugestões</li></a>
     </ul>
 </nav>
-
     </header>
     <hr>
     <div class="grid">
@@ -131,8 +131,9 @@ onde nosso projeto foi aplicado.</p>
 <div class="botao">
 <button onclick="calcular()"><p>Calcular consumo</p></button>
    </div>
+<div class="tot">
 <h2 id="total"></h2>
-
+</div>
 <div class="calculo">
 <div class="calcule">
 <h1 id="graficos">Gráfico do consumo<br> de energia:</h1>
@@ -141,8 +142,27 @@ onde nosso projeto foi aplicado.</p>
 <div class="grafico-container">
  <canvas id="graficoConsumo" width="400" height="200"></canvas>
 </div>
-
-
+<div class="calculo">
+<div class="calcule">
+<h1 id="calculadora">Sugestões para um consumo<br> mais eficiente e econômico:</h1>
+</div>
+</div>
+<div class="espaco"> 
+<div id="sugestoes" class="sugestoes">
+  <nav>
+    <ul>
+      <li><h3>- Desligue os aparelhos da tomada quando não estiverem em uso.</h3> </li><br>
+      <li><h3>- Utilize lâmpadas led, pois gastam menos energia.</h3></li><br>
+      <li><h3>- Desligue a impressora quando não estiver sendo usada.</h3></li><br>
+      <li><h3>- Monitore o tempo de uso dos aparelhos diariamente.</h3></li><br>
+      <li><h3>- Ajuste as configurações de economia de energia dos seus dispositivos.</h3></li><br>
+    </ul>
+  </nav>
+</div>
+</div>
+<footer>
+  <p>©2025 copyright - todos direitos reservados Sinergreen®</p>
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="script.js"></script>
 </body>
